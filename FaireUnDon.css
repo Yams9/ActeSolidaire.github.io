@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad Flux', sans-serif;
+}
+header{
+    background-color: rgb(48, 48, 49);
+    position: relative;
+    height: 80px;
+    top: 0;
+    
+}
+header >*{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
+}
+header img {
+    width: 50px;
+
+}
+header>ul {
+
+    right: 0;
+    text-decoration: none;
+}
+
+header,
+header a {
+
+    color: white;
+}
+
+header a:nth-child(2) {
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+header>ul li {
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+header>ul li:hover {
+
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.page-main{
+
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.bienvenue {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: flex-start;       
+    padding: 20px;
+}
+
+.bienvenue img {
+    max-width: 50%;     
+    height: auto;
+    margin-right: 20px;
+}
+
+.bienvenue div {
+    flex: 1;
+    text-align: left;
+}
+
+
+
+.bienvenue>.texte {
+    width: 500px;
+    margin-left: 20px;
+}
+h1 {
+    margin-left: 500px;
+}
+
+.produit {
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-top: 150px; 
+  align-items: center;
+}
+
+.card {
+  align-items: center;
+  background-color: whitesmoke; 
+  border-radius: 10px;
+  padding: 20px; 
+  width: 250px;
+  text-align: center;
+  margin: 15px; 
+  transition: transform 0.3s ease;
+  
+}
+.card:hover {
+  transform: translateY(-10px) ;
+}
+
+.or {
+  border-radius: 5px; 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover;
+  align-items: center;
+  margin-top: 20px;
+ 
+}
+
+
+.donner {
+  background-color: #000000; 
+  color: white; 
+  border: none; 
+  border-radius: 15px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  margin-top: 40px; 
+  text-decoration: none;
+  font-family: 'Afacad Flux';
+}
+
+.donner:hover{
+  background-color: #ffffff; 
+  color: black;
+  
+}
+@keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }

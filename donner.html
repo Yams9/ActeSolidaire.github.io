@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="donner.css">
+    <link
+      rel="stylesheet"
+      href=
+      
+    />
+    <script src="app.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        
+</script>
+<header>
+    <a href="/">
+        <img src="img/image_2024-10-10_155540419-removebg-preview.png" alt="Logo">
+    </a>
+    <a href="/">ActeSolidaire</a>
+    <ul>
+        <li><a href="index.html" id="test">Accueil</a></li>
+        <li><a href="FaireUnDon.html">Faire un Dons</a></li>
+        <li><a href="#a-propos">A lire</a></li>
+
+    </ul>
+</header>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "SGvGQD8w440B3OQzY",
+      });
+   })();
+</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Veuillez remplir le Formulaire</h1>
+          <h4>
+           N'oubliez pas de lire les conditions d'utilisations
+          </h4>
+        </div>
+        <div class="col-md-6 border-left ">
+          <h1>Formulaire de donations</h1>
+          <div class="form-group">
+            <h5 for="name">Nom et prénom</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Numéro</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Votre Numéro"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="adresse">adresse</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="adresse"
+              placeholder="Votre adresse"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Vos Objets à donner et le Daara</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Envoyer</button>
+          <div id="confirmation-message" style="display:none;">Envoyé</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
